@@ -2,6 +2,11 @@
 """ENTER YOUR SOLUTION HERE!"""
 
 def frequencies(items):
-    frequencies = {}
-    # Your code goes here
+    frequencies = []
+    # start coding here
+    for i in items:
+        frequencies.append(str(i))
+    temp = frequencies
+    frequencies = dict((i, temp.count(i)) for i in temp)
+    print(frequencies)
     return frequencies
